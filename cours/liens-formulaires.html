@@ -14,13 +14,17 @@
     <a href="./balises.html">La page des balises</a>
     <a href="./mes-pages-cachees/index.html">La page d'index cachée</a>
 
-    <form action="http://mon-server.com/update-liens" >
+    <form action="http://mon-server.com/update-liens" method="POST">
         <p> Ceci est un formulaire</p>
         <div>
             Prénom : <input type="text" name="prenom">
         </div>
         <div>
-            Nom : <input type="text" name="nom">
+            <label for="id-nom" >Nom : </label><input id="id-nom" type="text" name="nom">
+        </div>
+        <div>
+            <label for="id-case-a-cocher">Choix : </label>
+            <input id="id-case-a-cocher" type="checkbox" name="case-a-cocher">
         </div>
         <input type="submit" value="Envoi données">
         <input type="reset" value="Reset">
